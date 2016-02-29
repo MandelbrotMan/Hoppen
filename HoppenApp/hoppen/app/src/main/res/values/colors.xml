@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="facebook">#3B5998</color>
+    <color name="googleplus">#dd4b39</color>
+    <color name="set1PrimaryGreen">#4CAF50</color>
+    <color name="set1AccentLight">#81C784</color>
+    <color name="set1AccentDark">#2E7D32</color>
+    <color name="set1Dark">#555555</color>
+    <color name="set1Bright">#FF6D00</color>
+</resources>

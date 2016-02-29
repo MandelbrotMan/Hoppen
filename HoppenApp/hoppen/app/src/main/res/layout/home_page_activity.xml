@@ -1,0 +1,35 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/_login_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/set1PrimaryGreen"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment1"
+        android:name="com.example.raymondlian.hoppen.LogInSignUpBarFragment"
+        tools:layout="@layout/fragment_login_singup_bar" android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/_info_container"
+        android:orientation="vertical"
+        android:layout_below="@+id/fragment1"
+        android:layout_centerHorizontal="true">
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

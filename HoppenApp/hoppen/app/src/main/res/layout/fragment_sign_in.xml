@@ -7,7 +7,6 @@
     >
 
 
-
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -15,15 +14,16 @@
             android:id="@+id/_mail_icon"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
-            android:alpha="0.8"/>
+            android:alpha="0.75"/><!-- Alpha affects transparency  -->
         <EditText
             android:layout_width="240dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/_mail_icon"
-            android:id="@+id/_editText_UserEmail"
+            android:id="@+id/_editText_UserEmail_SignIn"
             android:text="email"
-            android:alpha="0.8"/>
+            android:alpha="0.6"/>
+
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -32,18 +32,19 @@
             android:layout_below="@+id/_mail_icon"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:alpha="0.8"/>
+            android:alpha="0.75"/>
         <EditText
             android:layout_width="240dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/_lock_icon"
-            android:layout_below="@id/_editText_UserEmail"
-            android:id="@+id/_editText_UserPassword"
+            android:layout_below="@id/_editText_UserEmail_SignIn"
+            android:id="@+id/_editText_UserPassword_SignIn"
             android:text="Password"
-            android:alpha="0.8"
+            android:alpha="0.6"
             />
+
         <Button
             android:layout_width="280dp"
             android:layout_height="40dp"
@@ -51,7 +52,7 @@
             android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:background="@color/set1AccentDark"
-            android:layout_below="@id/_editText_UserPassword"
+            android:layout_below="@id/_editText_UserPassword_SignIn"
             android:layout_marginTop="30dp"
             android:id="@+id/_login_button"/>
         <Button
@@ -59,7 +60,7 @@
             android:layout_height="30dp"
             android:layout_marginTop="20dp"
             android:text="Forgot Password?"
-            android:alpha="0.8"
+            android:alpha="0.75"
             android:background="@null"
             android:layout_below="@id/_login_button"
             android:id="@+id/_forgot_password_button"
@@ -71,7 +72,7 @@
             android:layout_below="@id/_forgot_password_button"
             android:layout_marginTop="20dp"
             android:background="@color/black"
-            android:alpha="0.8"
+            android:alpha="0.75"
             android:layout_centerHorizontal="true"/>
         <TextView
             android:layout_width="100dp"
@@ -81,25 +82,40 @@
             android:text="Or Log In Using"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:id="@+id/_other_options_text"/>
+            android:id="@+id/_other_options_text"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_other_options_text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/_login_facebook_button_container">
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="40dp"
+                android:background="@color/facebook"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/_login_facebook_button"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/f_icon"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
         <Button
             android:layout_width="135dp"
             android:layout_height="40dp"
-            android:background="@color/facebook"
+            android:background="@color/googleplus"
             android:layout_marginLeft="10dp"
             android:layout_below="@id/_other_options_text"
             android:layout_marginTop="10dp"
-            android:id="@+id/_login_facebook_button"/>
-    <Button
-        android:layout_width="135dp"
-        android:layout_height="40dp"
-        android:background="@color/googleplus"
-        android:layout_marginLeft="10dp"
-        android:layout_below="@id/_other_options_text"
-        android:layout_marginTop="10dp"
-        android:id="@+id/_login_google_button"
-        android:layout_toRightOf="@id/_login_facebook_button"/>
-    
+            android:id="@+id/_login_google_button"
+            android:layout_toRightOf="@id/_login_facebook_button_container"
+            />
+
 
 
 

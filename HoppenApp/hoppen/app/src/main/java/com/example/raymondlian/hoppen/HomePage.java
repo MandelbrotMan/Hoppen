@@ -21,6 +21,8 @@ public class HomePage extends AppCompatActivity {
         fragmentManager = getFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
+
+        //SignIn fragment uploaded by default
         SignInFragment StartingFragment = new SignInFragment();
         LoginStatus = true;
         fragmentTransaction.add(R.id._info_container, StartingFragment, "Current");
@@ -29,6 +31,7 @@ public class HomePage extends AppCompatActivity {
 
     }
     public void _SwitchToSignUp(){
+        //Checks if transaction is necessary
         if(LoginStatus == true) {
             SignUpFragment ReplacementFragment = new SignUpFragment();
             FragmentTransaction transaction = fragmentManager.beginTransaction();

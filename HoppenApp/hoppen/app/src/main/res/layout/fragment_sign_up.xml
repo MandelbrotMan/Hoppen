@@ -34,7 +34,7 @@
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@id/_mail_icon"
-        android:id="@+id/_editText_UserEmail"
+        android:id="@+id/_editText_UserEmail_SignIn"
         android:text="email"
         android:alpha="0.6"
         android:layout_below="@+id/_editText_UserName"/>
@@ -53,8 +53,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@id/_lock_icon"
-        android:layout_below="@id/_editText_UserEmail"
-        android:id="@+id/_editText_UserPassword"
+        android:layout_below="@id/_editText_UserEmail_SignIn"
+        android:id="@+id/_editText_UserPassword_SignIn"
         android:text="Password"
         android:alpha="0.6"
 
@@ -65,7 +65,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@id/_lock_icon"
-        android:layout_below="@id/_editText_UserPassword"
+        android:layout_below="@id/_editText_UserPassword_SignIn"
         android:id="@+id/_confirm_editText_UserPassword"
         android:text="Confirm Password"
         android:alpha="0.6"
